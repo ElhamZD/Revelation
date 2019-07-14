@@ -46,14 +46,22 @@ nav{
 	width:70%;
 	text-align:right;
 }
-.rightMenu a{
+.rightMenu ul{
+    list-style-type: none;
+    margin-left: 20%;
+}
+.rightMenu ul li{
+    float:left;
+}
+.rightMenu ul li a{
 	text-decoration: none;
 	color:#333333;
 	font-size:12px;
 	margin-left:15px;
-	text-align: left
+	text-align: left;
+    display: inline-block;
 }
-.rightMenu a:first-child{
+.rightMenu a.first-child{
 	margin-left:0;
 }
 .rightMenu a:hover{
@@ -259,27 +267,33 @@ nav{
 	text-align: center;
 	background:#353535;
 	font-size:18px;
+    transition-duration: .4s;
 }
-/*problem here*/
-.link:hover{
+
+.newsletter .socialMedia li a.linkedIn:hover{
 	background:#0077B5;
 	color:white;
+    transition-duration: .4s;
 }
-.tw:hover{
+.newsletter .socialMedia li a.tw:hover{
 	background:#1da1f2;
 	color:white;
+    transition-duration: .4s;
 }
-.pinterest:hover{
+.newsletter .socialMedia li a.pinterest:hover{
 	background:#bd081c;
 	color:white;
+    transition-duration: .4s;
 }
-.google:hover{
+.newsletter .socialMedia li a.google:hover{
 	background:#dd4b39;
 	color:white;
+    transition-duration: .4s;
 }
-.rss:hover{
+.newsletter .socialMedia li a.rss:hover{
 	background:#f26522;
 	color:white;
+    transition-duration: .4s;
 }
 .contact{
 	background:#222222;
@@ -309,4 +323,5 @@ nav{
 	float:right;
 	color:#666666;
 	text-align:right;
+    padding-top:15px;
 }
